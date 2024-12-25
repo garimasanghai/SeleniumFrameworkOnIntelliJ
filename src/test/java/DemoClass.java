@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public class DemoClass {
+    public static void main(String[] args) {
+        System.out.println("This is my first commit");
+    }
 }
