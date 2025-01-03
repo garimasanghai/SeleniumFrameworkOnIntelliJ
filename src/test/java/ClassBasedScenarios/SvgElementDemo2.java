@@ -3,14 +3,14 @@ package ClassBasedScenarios;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
 public class SvgElementDemo2 {
     public static void main(String[] args) throws Exception {
 
-        WebDriver driver = new EdgeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.amcharts.com/svg-maps/?map=india");
         driver.manage().window().maximize();
 
