@@ -4,14 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 public class VingifyVerifyErrorMsg {
       @Test
-    public void test_negative_vwo_login() throws Exception {
+    public static void test_negative_vwo_login() throws Exception {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://vwo.com/free-trial");
@@ -32,9 +35,15 @@ public class VingifyVerifyErrorMsg {
 
         WebElement error_message = driver.findElement(By.className("invalid-reason"));
 
-        Assert.assertEquals(error_message.getText(), "The email address you entered is incorrect.");
+          WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3000));
+          wait.until(ExpectedConditions.textToBePresentInElement(error_message,"The email address you entered is incorrect."));
 
-        Thread.sleep(5000);
+        Assert.assertEquals(error_message.getText(), "The email address you entered is incorrect.");
         driver.quit();
       }
+
+    public static void main(String[] args) throws Exception {
+        test_negative_vwo_login();
+        System.out.println("Executed Successfully");
+    }
 }
