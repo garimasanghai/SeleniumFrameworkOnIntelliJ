@@ -1,4 +1,4 @@
-package PracticeScenarios.WebelementsHandling;
+package PracticeScenarios.WebElement_Handling;
 
 import java.time.Duration;
 

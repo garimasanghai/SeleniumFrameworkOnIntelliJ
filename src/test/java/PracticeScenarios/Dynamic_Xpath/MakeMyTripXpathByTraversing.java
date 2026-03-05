@@ -1,5 +1,6 @@
 package PracticeScenarios.Dynamic_Xpath;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -13,7 +14,7 @@ public class MakeMyTripXpathByTraversing {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.makemytrip.com/");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.findElement(By.xpath("//span[@class='langCardClose']")).click();
 		Thread.sleep(1000);

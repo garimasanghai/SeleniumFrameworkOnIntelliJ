@@ -1,4 +1,4 @@
-package PracticeScenarios.WebelementsHandling;
+package PracticeScenarios.WebElement_Handling;
 
 import java.time.Duration;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Autosiggestion {
+public class Autosuggestion {
 
 	public static void main(String[] args) throws InterruptedException
 	{

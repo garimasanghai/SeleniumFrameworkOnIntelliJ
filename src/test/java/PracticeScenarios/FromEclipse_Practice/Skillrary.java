@@ -16,19 +16,17 @@ public class Skillrary {
 		driver.manage().window().maximize();
 		driver.get("https://demoapp.skillrary.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-  WebElement ele = driver.findElement(By.id("course"));
+
+	WebElement ele = driver.findElement(By.id("course"));
 	
 	Actions a=new Actions(driver);
 	a.moveToElement(ele);
 	
 	driver.findElement(By.xpath("(//a[text()='Selenium Training'])[1]")).click();
-	
 	driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
 	
 	Alert b = driver.switchTo().alert();
 	System.out.println(b.getText());
 	b.dismiss();
 	}
-
 }

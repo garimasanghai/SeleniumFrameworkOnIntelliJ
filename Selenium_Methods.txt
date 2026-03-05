@@ -1,0 +1,72 @@
+
+Navigation & Browser Methods:
+| Method               | Usage                                 | Syntax                             |
+| ---------------------| ------------------------------------  | ---------------------------------- |
+| get()                | Opens a URL in the browser            | driver.get("https://example.com"); |
+| getTitle()           | Returns the title of the current page | driver.getTitle();                 |
+| getCurrentUrl()      | Returns the current page URL          | driver.getCurrentUrl();            |
+| getPageSource()      | Returns the HTML source of the page   | driver.getPageSource();            |
+| navigate().back()    | Navigates to the previous page        | driver.navigate().back();          |
+| navigate().forward() | Navigates to the next page            | driver.navigate().forward();       |
+| navigate().refresh() | Refreshes the current page            | driver.navigate().refresh();       |
+
+
+Element Locators & Interaction:
+| Method         | Usage                         | Syntax                                    |
+| ---------------| ----------------------------  | ---------------------------------------   |
+| findElement()  | Finds a single element        | driver.findElement(By.xpath("//input"));  |
+| findElements() | Finds multiple elements       | driver.findElements(By.xpath("//input")); |
+| click()        | Clicks an element             | element.click();                          |
+| sendKeys()     | Enters text into input fields | element.sendKeys("text");                 |
+| clear()        | Clears input field            | element.clear();                          |
+| getText()      | Retrieves element text        | element.getText();                        |
+| getAttribute() | Retrieves attribute value     | element.getAttribute("value");            |
+| getCssValue()  | Gets CSS property value       | element.getCssValue("color");             |
+
+
+Element State Methods:
+| Method        | Usage                                | Syntax                 |
+| ------------- | ------------------------------------ | ---------------------- |
+| isDisplayed() | Checks if element is visible         | element.isDisplayed(); |
+| isEnabled()   | Checks if element is enabled         | element.isEnabled();   |
+| isSelected()  | Checks if checkbox/radio is selected | element.isSelected();  |
+
+
+Alert Handling:
+| Method             | Usage                      | Syntax                                   |
+| ------------------ | -------------------------- | ---------------------------------------- |
+| switchTo().alert() | Switch to alert popup      | Alert alert = driver.switchTo().alert(); |
+| accept()           | Clicks OK                  | alert.accept();                          |
+| dismiss()          | Clicks Cancel              | alert.dismiss();                         |
+| getText()          | Gets alert text            | alert.getText();                         |
+| sendKeys()         | Sends text to prompt alert | alert.sendKeys("text");                  |
+
+
+Window Handling:
+| Method              | Usage                          | Syntax                              |
+| ------------------- | ------------------------------ | ----------------------------------- |
+| switchTo().window() | Switch between browser windows | driver.switchTo().window(windowID); |
+| getWindowHandle()   | Returns current window ID      | driver.getWindowHandle();           |
+| getWindowHandles()  | Returns all window IDs         | driver.getWindowHandles();          |
+
+
+Browser Control:
+| Method  | Usage                                       | Syntax          |
+| ------- | ------------------------------------------- | --------------- |
+| close() | Closes current browser window               | driver.close(); |
+| quit()  | Closes all browser windows and ends session | driver.quit();  |
+
+
+Cookie Management:
+| Method             | Usage               | Syntax                              |
+| ------------------ | ------------------- | ----------------------------------- |
+| deleteAllCookies() | Deletes all cookies | driver.manage().deleteAllCookies(); |
+
+
+Mouse Actions:
+| Action        | Syntax                                    |
+| ------------- | ----------------------------------------- |
+| Hover         | actions.moveToElement(element).perform(); |
+| Right click   | actions.contextClick(element).perform();  |
+| Double click  | actions.doubleClick(element).perform();   |
+| Drag and drop | actions.dragAndDrop(src, dest).perform(); |

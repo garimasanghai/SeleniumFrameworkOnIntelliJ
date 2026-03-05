@@ -1,4 +1,4 @@
-package PracticeScenarios.WebelementsHandling;
+package PracticeScenarios.WebElement_Handling;
 
 import java.time.Duration;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Isenabled {
+public class IsSelected {
 
 	public static void main(String[] args) 
 	{
@@ -16,17 +16,16 @@ public class Isenabled {
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		WebElement button = driver.findElement(By.name("login"));
-		if (button.isEnabled())
+		driver.findElement(By.xpath("//a[text()='Create New Account']")).click();
+		WebElement btn = driver.findElement(By.xpath("//label[text()='Female']"));
+		if (btn.isSelected())
 		{
-			System.out.println("Pass: element is enabled");
-			button.click();
+			System.out.println("Pass");
 		}
 		else
 		{
-			System.out.println("Fail: element is not enabled");
+			System.out.println("Fail");
 		}
-		
 		driver.close();
 	}
 

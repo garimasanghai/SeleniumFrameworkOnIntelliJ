@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +26,7 @@ public class Screenshot {
 		File dest = new File("./photo/amazon.png");
 		
 		//copy and paste from RAM to Required location 
-		FileUtils.copyFile(src, dest);
+	//	FileUtils.copyFile(src, dest);
 		
 		driver.close();
 	}
