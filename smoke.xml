@@ -5,7 +5,7 @@
 
     <test name="SmokeTests">
         <classes>
-            <class name="PracticeScenarios.Test_Url_01"/>
+            <class name="Basic_Scenarios.Test_Url_01"/>
         </classes>
     </test>
 
