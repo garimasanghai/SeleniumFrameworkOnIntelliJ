@@ -1,4 +1,4 @@
-package Practice_Demo_01.Intro_01;
+package PracticeScenarios;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

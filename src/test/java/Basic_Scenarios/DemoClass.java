@@ -1,8 +1,7 @@
-package ClassBasedScenarios.Demo;
+package Basic_Scenarios;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.Test;
 
 public class DemoClass {
     public static void main(String[] args) throws InterruptedException {

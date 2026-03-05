@@ -1,4 +1,4 @@
-package SelfPracticeScenarios.EcommerceScenarios;
+package PracticeScenarios;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
