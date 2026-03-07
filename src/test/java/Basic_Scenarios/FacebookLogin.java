@@ -6,12 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class FacebookLogin {
+public class FacebookLogin  {
     public static void main(String[] args) throws InterruptedException {
+
         WebDriver driver =new ChromeDriver();
+        driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.facebook.com/");
         System.out.println("The title is: " + driver.getTitle());
 
         driver.findElement(By.id("email")).sendKeys("admin");
