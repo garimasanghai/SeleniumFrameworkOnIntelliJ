@@ -21,8 +21,8 @@ public class Facebook {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.findElement(By.id("email")).sendKeys("admin");			//id locator
-		driver.findElement(By.id("pass")).sendKeys("manager");								//id locator
+		driver.findElement(By.name("email")).sendKeys("admin");			//id locator
+		driver.findElement(By.name("pass")).sendKeys("manager");								//id locator
 		
 		driver.findElement(By.name("login")).click();									//name locator
 		
