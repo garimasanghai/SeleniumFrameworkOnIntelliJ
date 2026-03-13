@@ -1,6 +1,6 @@
 package Practice_HandlingElements;
 
-import BaseClass.CommonToAll;
+import Base_Class.CommonToAll;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

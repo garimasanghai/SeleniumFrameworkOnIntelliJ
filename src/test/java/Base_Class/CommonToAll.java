@@ -1,4 +1,4 @@
-package BaseClass;
+package Base_Class;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
