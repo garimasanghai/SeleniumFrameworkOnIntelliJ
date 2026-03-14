@@ -26,6 +26,12 @@ public class SelectMulti_LeafGround extends CommonToAll {
         selected_country.click();
         System.out.println(select_country.getText());
 
+        WebElement select_course = waitForVisibility(driver, 3, By.xpath("//button[contains(@class, 'ui-autocomplete-dropdown')]"));
+                //driver.findElement(By.xpath("//button[contains(@class, 'ui-autocomplete-dropdown')]"));
+        select_course.click();
+        WebElement course_option = waitForVisibility(driver, 3, By.xpath("//li[@data-item-value = 'Playwright']"));
+        course_option.click();
+
         WebElement chooseLang = driver.findElement(By.id("j_idt87:lang"));
         chooseLang.click();
         WebElement chosenLang = driver.findElement(By.xpath("//li[@data-label = 'English']"));
